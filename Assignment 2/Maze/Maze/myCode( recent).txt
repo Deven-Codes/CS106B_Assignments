@@ -1,0 +1,129 @@
+/*
+ * Project: Maze
+ * Created by CS106 C++ Assignment Wizard 0.1
+ *
+ * Name: [TODO: enter name here]
+ * Section: [TODO: enter section leader here]
+ * [TODO: Describe assignment]
+ */
+
+#include <iostream>
+#include "maze.h"
+#include "graphics.h"
+#include "simpio.h"
+#include "Vector.h"
+#include "random.h"
+
+
+using namespace std;
+
+struct point {
+	int status;
+	pointT pt;
+};
+
+Vector<point> Points;
+
+
+int rows, cols;
+
+void CreateMaze(Maze & m);
+int Index(pointT p);
+bool CheckStatus();
+pointT NextPoint(pointT curPt, Maze & m);
+
+
+int main ()
+{	
+	Randomize();
+
+	cout << "Enter number of rows: ";
+	rows = GetInteger();
+	cout << "Enter number of columns: ";
+	cols = GetInteger();
+
+	point data;
+	data.status = 0;
+	for(int i = 0; i < rows; i++) {
+		data.pt.row = i;
+		for(int j = 0; j < cols; j++) {
+			data.pt.col = j;
+			Points.add(data);
+		}
+	}
+
+	InitGraphics();
+	Maze m(rows, cols, true);
+	m.draw();
+	CreateMaze(m);
+
+
+	//p.row = 9;
+	//p.col = 19;
+	//inPoints.setAt((rows * cols) - 1, p);
+	//cout << "inPoints: " << inPoints.size() << " row: " << inPoints[(rows * cols) - 1].row 
+	//	<< " col: " << inPoints[(rows * cols) - 1].col << endl;
+
+	//cout << " row: " << inPoints[(rows * cols) - 2].row << " col: " << inPoints[(rows * cols) - 2].col << endl;
+	//CreateMaze(m);
+
+	/*for(int i = 0; i < (rows * cols); i++) {
+		cout << "Point : [" <<  exPoints[i].row << ", " << exPoints[i].col << "]" << "   Index: " 
+			<< (exPoints[i].row * cols) + exPoints[i].col << endl;
+	}*/
+
+	return 0;
+}
+
+void CreateMaze(Maze & m) {
+	pointT curPt;
+	curPt.row = RandomInteger(0, (rows -1));
+	curPt.col = RandomInteger(0, (cols -1));
+	Points[Index(curPt)].status = 1;
+
+	while(true) {
+		if(CheckStatus()) break;
+		pointT nextPt = NextPoint(curPt, m);
+		if(m.isWall(curPt, nextPt)) {
+			m.setWall(curPt, nextPt, false);
+			Points[Index(nextPt)].status = 1;
+		}
+		curPt = nextPt;
+	}
+
+}
+
+int Index(pointT p) {
+	return (p.row * cols) + p.col;
+}
+
+bool CheckStatus() {
+	for(int i = 0; i < Points.size(); i++) {
+		if(Points[i].status == 0) return false;
+	}
+	return true;
+}
+
+pointT NextPoint(pointT curPt, Maze & m)
+{
+	pointT nextPt;
+	while(true) {
+		if(RandomChance(0.5)) {
+			if(RandomChance(0.5)) {
+				nextPt.row = curPt.row - 1;
+			} else {
+				nextPt.row = curPt.row + 1;
+			}
+			nextPt.col = curPt.col;
+		} else {
+			if(RandomChance(0.5)) {
+				nextPt.col = curPt.col - 1;
+			} else {
+				nextPt.col = curPt.col + 1;
+			}
+			nextPt.row = curPt.row;
+		}
+		if(m.pointInBounds(nextPt) && (Points[Index(nextPt)].status == 0)) break;
+	}
+	return nextPt;
+}

@@ -1,0 +1,156 @@
+
+For Arrays of length 10000:
+
+Mystery Sort 1:
+Sorted Order:
+0
+Random Order:
+1.093
+Reverse Order:
+2.126
+Partially Sorted Order:
+0.621
+
+Mystery Sort 2:
+Sorted Order:
+0.693
+Random Order:
+0
+Reverse Order:
+0.703
+Partially Sorted Order:
+0.016
+
+Mystery Sort 3:
+Sorted Order:
+0.015
+Random Order:
+0
+Reverse Order:
+0
+Partially Sorted Order:
+0.015
+
+Mystery Sort 4:
+Sorted Order:
+1.578
+Random Order:
+1.578
+Reverse Order:
+1.61
+Partially Sorted Order:
+1.571
+
+Mystery Sort 5:
+Sorted Order:
+0
+Random Order:
+2.485
+Reverse Order:
+3.015
+Partially Sorted Order:
+2.188
+
+For Arrays of length 20000:
+
+Mystery Sort 1:
+Sorted Order:
+0
+Random Order:
+4.281
+Reverse Order:
+8.513
+Partially Sorted Order:
+2.501
+
+Mystery Sort 2:
+Sorted Order:
+2.86
+Random Order:
+0.015
+Reverse Order:
+2.829
+Partially Sorted Order:
+0
+
+Mystery Sort 3:
+Sorted Order:
+0.015
+Random Order:
+0.032
+Reverse Order:
+0.015
+Partially Sorted Order:
+0.016
+
+Mystery Sort 4:
+Sorted Order:
+6.328
+Random Order:
+6.391
+Reverse Order:
+6.516
+Partially Sorted Order:
+6.371
+
+Mystery Sort 5:
+Sorted Order:
+0
+Random Order:
+10.032
+Reverse Order:
+12.204
+Partially Sorted Order:
+8.907
+
+For Arrays of length 30000:
+
+Mystery Sort 1:
+Sorted Order:
+0
+Random Order:
+9.657
+Reverse Order:
+19.236
+Partially Sorted Order:
+5.592
+
+Mystery Sort 2:
+Sorted Order:
+6.453
+Random Order:
+0.016
+Reverse Order:
+6.42
+Partially Sorted Order:
+0.016
+
+Mystery Sort 3:
+Sorted Order:
+0.031
+Random Order:
+0.047
+Reverse Order:
+0.031
+Partially Sorted Order:
+0.031
+
+Mystery Sort 4:
+Sorted Order:
+14.344
+Random Order:
+14.23
+Reverse Order:
+14.517
+Partially Sorted Order:
+14.203
+
+Mystery Sort 5:
+Sorted Order:
+0
+Random Order:
+22.32
+Reverse Order:
+27.295
+Partially Sorted Order:
+19.739

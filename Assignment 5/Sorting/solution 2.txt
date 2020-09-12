@@ -1,0 +1,126 @@
+
+For Arrays of length 10000:
+
+Mystery Sort 1:
+Sorted Order:
+0.001
+Random Order:
+1.055
+Reverse Order:
+2.128
+
+Mystery Sort 2:
+Sorted Order:
+0.709
+Random Order:
+0.005
+Reverse Order:
+0.71
+
+Mystery Sort 3:
+Sorted Order:
+0.01
+Random Order:
+0.013
+Reverse Order:
+0.01
+
+Mystery Sort 4:
+Sorted Order:
+1.616
+Random Order:
+1.608
+Reverse Order:
+1.623
+
+Mystery Sort 5:
+Sorted Order:
+0.001
+Random Order:
+2.66
+Reverse Order:
+2.995
+
+For Arrays of length 20000:
+
+Mystery Sort 1:
+Sorted Order:
+0.001
+Random Order:
+4.242
+Reverse Order:
+8.528
+
+Mystery Sort 2:
+Sorted Order:
+2.848
+Random Order:
+0.011
+Reverse Order:
+2.845
+
+Mystery Sort 3:
+Sorted Order:
+0.021
+Random Order:
+0.027
+Reverse Order:
+0.021
+
+Mystery Sort 4:
+Sorted Order:
+6.419
+Random Order:
+6.386
+Reverse Order:
+6.476
+
+Mystery Sort 5:
+Sorted Order:
+0
+Random Order:
+10.585
+Reverse Order:
+11.976
+
+For Arrays of length 30000:
+
+Mystery Sort 1:
+Sorted Order:
+0.002
+Random Order:
+9.577
+Reverse Order:
+19.096
+
+Mystery Sort 2:
+Sorted Order:
+6.385
+Random Order:
+0.017
+Reverse Order:
+6.376
+
+Mystery Sort 3:
+Sorted Order:
+0.034
+Random Order:
+0.041
+Reverse Order:
+0.033
+
+Mystery Sort 4:
+Sorted Order:
+14.466
+Random Order:
+14.394
+Reverse Order:
+14.563
+
+Mystery Sort 5:
+Sorted Order:
+0.002
+Random Order:
+23.698
+Reverse Order:
+26.993

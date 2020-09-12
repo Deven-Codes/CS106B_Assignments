@@ -1,0 +1,91 @@
+
+Now, let's run an empirical time trial.
+
+How large a pqueue to time? (10000 to 1000000, or 0 to quit): 10000
+
+---- Performance for 10000-element pqueue (sorted linked list) -----
+
+Time to enqueue into 10000-element pqueue: 47 usecs
+Time to dequeue from 10000-element pqueue: 0 usecs
+Time to pqsort random sequence of 10000 elements: 328 msecs
+Time to pqsort sorted sequence of 10000 elements: 829 msecs
+Time to pqsort reverse-sorted sequence of 10000 elements: 1109 msecs
+
+Running memory trial on 10000-element pqueue
+After consecutive enqueues, 10000-element pqueue is using 80 KB of memory
+After more enqueue/dequeue, 10022-element pqueue is using 80 KB of memory
+
+------------------- End of trial ---------------------
+
+
+How large a pqueue to time? (10000 to 1000000, or 0 to quit): 100000
+
+---- Performance for 100000-element pqueue (sorted linked list) -----
+
+Time to enqueue into 100000-element pqueue: 1344 usecs
+Time to dequeue from 100000-element pqueue: 0 usecs
+Time to pqsort random sequence of 100000 elements: 93036 msecs
+Time to pqsort sorted sequence of 100000 elements: 5219 msecs
+Time to pqsort reverse-sorted sequence of 100000 elements: 40658 msecs
+
+Running memory trial on 100000-element pqueue
+After consecutive enqueues, 100000-element pqueue is using 800 KB of memory
+After more enqueue/dequeue, 100018-element pqueue is using 800 KB of memory
+
+------------------- End of trial ---------------------
+
+
+How large a pqueue to time? (10000 to 1000000, or 0 to quit):
+
+
+
+
+
+
+
+
+
+
+
+
+Now, let's run an empirical time trial.
+
+How large a pqueue to time? (10000 to 1000000, or 0 to quit): 10000
+---- Performance for 10000-element pqueue (sorted linked list) -----
+Time to enqueue into 10000-element pqueue: 31 usecs
+Time to dequeue from 10000-element pqueue: 0 usecs
+Time to pqsort random sequence of 10000 elements: 312 msecs
+Time to pqsort sorted sequence of 10000 elements: 406 msecs
+Time to pqsort reverse-sorted sequence of 10000 elements: 1079 msecs
+Running memory trial on 10000-element pqueue
+After consecutive enqueues, 10000-element pqueue is using 80 KB of memory
+After more enqueue/dequeue, 10020-element pqueue is using 80 KB of memory
+------------------- End of trial ---------------------
+
+How large a pqueue to time? (10000 to 1000000, or 0 to quit): 20000
+---- Performance for 20000-element pqueue (sorted linked list) -----
+Time to enqueue into 20000-element pqueue: 78 usecs
+Time to dequeue from 20000-element pqueue: 0 usecs
+Time to pqsort random sequence of 20000 elements: 1828 msecs
+Time to pqsort sorted sequence of 20000 elements: 1282 msecs
+Time to pqsort reverse-sorted sequence of 20000 elements: 2406 msecs
+Running memory trial on 20000-element pqueue
+After consecutive enqueues, 20000-element pqueue is using 160 KB of memory
+After more enqueue/dequeue, 20010-element pqueue is using 160 KB of memory
+------------------- End of trial ---------------------
+
+How large a pqueue to time? (10000 to 1000000, or 0 to quit): 50000
+---- Performance for 50000-element pqueue (sorted linked list) -----
+Time to enqueue into 50000-element pqueue: 656 usecs
+Time to dequeue from 50000-element pqueue: 0 usecs
+Time to pqsort random sequence of 50000 elements: 14548 msecs
+Time to pqsort sorted sequence of 50000 elements: 2390 msecs
+Time to pqsort reverse-sorted sequence of 50000 elements: 10329 msecs
+Running memory trial on 50000-element pqueue
+After consecutive enqueues, 50000-element pqueue is using 400 KB of memory
+After more enqueue/dequeue, 50000-element pqueue is using 400 KB of memory
+
+------------------- End of trial ---------------------
+
+
+How large a pqueue to time? (10000 to 1000000, or 0 to quit):

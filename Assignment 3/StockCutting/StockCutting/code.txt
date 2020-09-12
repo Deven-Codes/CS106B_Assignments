@@ -1,0 +1,48 @@
+void MakeSubsets(Vector<int> &requests)
+{
+	for(int i = 0; i < requests.size(); i++) {
+		AddToData(requests[i]);
+	}
+}
+
+void AddToData(int num)
+{
+	if(!subsets.isEmpty()) {
+		int size = subsets.size();
+		for(int i = 0; i < size; i++) {
+			Vector<int> a;
+			a = subsets[i];
+			a.add(num);
+			subsets.add(a);
+		}
+	}
+	Vector<int> a;
+	a.add(num);
+	subsets.add(a);
+}
+
+void ShowSubsets()
+{
+	for(int i = 0; i < subsets.size(); i++) {
+		int sum = 0;
+		for(int j = 0; j < subsets[i].size(); j++) {
+			sum += subsets[i].getAt(j);
+		}
+		if(sum <= 10 && sum > 4) possible.add(subsets[i]);
+	}
+	subsets.clear();
+}
+
+void ShowPossible()
+{
+	for(int i = 0; i < possible.size(); i++) {
+		int sum = 0;
+		cout << "Possible Set " << i+1 << ": { ";
+		for(int j = 0; j < possible[i].size(); j++) {
+			cout << possible[i].getAt(j) << " "; 
+			sum += possible[i].getAt(j);
+		}
+		cout << "}" << endl;		
+		cout << "Sum: " << sum << endl;
+	}
+}

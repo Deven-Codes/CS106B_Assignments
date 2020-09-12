@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PQ starter", "PQ starter\PQ starter.vcproj", "{28FB4B20-8993-449D-A641-A18A081EC34E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28FB4B20-8993-449D-A641-A18A081EC34E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{28FB4B20-8993-449D-A641-A18A081EC34E}.Debug|Win32.Build.0 = Debug|Win32
+		{28FB4B20-8993-449D-A641-A18A081EC34E}.Release|Win32.ActiveCfg = Release|Win32
+		{28FB4B20-8993-449D-A641-A18A081EC34E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
