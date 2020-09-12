@@ -14,6 +14,5 @@ Course: https://see.stanford.edu/Course/CS106B
 
 Disclaimer: This is not a C++ course, C++ is only used to understand the concept of Programming Abstractions. 
 
-Software: 1. PCLibs-VS2005-ADT-Installer.zip is provided in download materials which is required for this course. 
-	  2. PCLibs-VS2005-ADT is only compatible with Visual Studio 2005.
+Software: PCLibs-VS2005-ADT-Installer.zip is provided in download materials which is required for this course. PCLibs-VS2005-ADT is only compatible with Visual Studio 2005.
 		  
